@@ -4,6 +4,9 @@
 *.obj
 *.elf
 
+#OSX
+.DS_Store
+
 # Precompiled Headers
 *.gch
 *.pch
