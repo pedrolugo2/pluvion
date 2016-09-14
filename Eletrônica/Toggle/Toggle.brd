@@ -496,7 +496,7 @@ design rules under a new name.
 <element name="D5" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="DB2S31600" x="1.5875" y="6.35" smashed="yes" rot="R270">
 <attribute name="NAME" x="2.794" y="5.6515" size="1.016" layer="25" ratio="15" rot="R90"/>
 </element>
-<element name="Q1" library="transistor-power" package="MICRO3" value="" x="3.4925" y="10.795" smashed="yes" rot="R90">
+<element name="Q1" library="transistor-power" package="MICRO3" value="PFET" x="3.4925" y="10.795" smashed="yes" rot="R90">
 <attribute name="NAME" x="1.575" y="10.30625" size="0.762" layer="25" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="6.8925" y="9.295" size="1.778" layer="27" rot="R90"/>
 </element>
@@ -509,7 +509,7 @@ design rules under a new name.
 <element name="R3" library="wes" package="R0603" value="0R" x="5.715" y="7.3025" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.08" y="5.08" size="0.762" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="Q2" library="SparkFun-DiscreteSemi" package="SOT23" value="MOSFET-NCHANNELBSS123LT1G" x="12.3825" y="6.6675" smashed="yes" rot="R270">
+<element name="Q2" library="SparkFun-DiscreteSemi" package="SOT23" value="NFET" x="12.3825" y="6.6675" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="TRANS-08345" x="12.3825" y="6.6675" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="13.3985" y="7.747" size="0.762" layer="25" ratio="15"/>
 </element>
@@ -518,10 +518,10 @@ design rules under a new name.
 <attribute name="VALUE" x="0" y="-1.905" size="1.27" layer="27"/>
 </element>
 <element name="BUT" library="SparkFun-Connectors" package="1X02_NO_SILK" value="M021X02_NO_SILK" x="11.43" y="13.97" smashed="yes"/>
-<element name="R5" library="wes" package="R0603" value="10k" x="13.6525" y="10.4775" smashed="yes" rot="R90">
+<element name="R5" library="wes" package="R0603" value="100R" x="13.6525" y="10.4775" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.0175" y="11.90625" size="0.762" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="R6" library="wes" package="R0603" value="10k" x="11.7475" y="10.4775" smashed="yes" rot="R90">
+<element name="R6" library="wes" package="R0603" value="100R" x="11.7475" y="10.4775" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.1125" y="11.90625" size="0.762" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="D1" library="SparkFun-DiscreteSemi" package="SOD523" value="" x="7.3025" y="7.3025" smashed="yes" rot="R90">

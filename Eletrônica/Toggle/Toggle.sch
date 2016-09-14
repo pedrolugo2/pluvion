@@ -5062,7 +5062,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </classes>
 <parts>
 <part name="R1" library="wes" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="Q1" library="transistor-power" deviceset="IRLML5203" device="" value=""/>
+<part name="Q1" library="transistor-power" deviceset="IRLML5203" device="" value="PFET"/>
 <part name="R2" library="wes" deviceset="R-EU_" device="R0603" value="1M"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="VOUT" library="supply1" deviceset="VCC" device=""/>
@@ -5073,12 +5073,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="DB2S31600"/>
 <part name="C2" library="wes" deviceset="C-EU" device="C0805" value="10uF 10V"/>
 <part name="R3" library="wes" deviceset="R-EU_" device="R0603" value="0R"/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="MOSFET-NCHANNELBSS123LT1G"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="NFET"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK" value="M021X02_NO_SILK"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 <part name="BUT" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK" value="M021X02_NO_SILK"/>
-<part name="R5" library="wes" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="R6" library="wes" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R5" library="wes" deviceset="R-EU_" device="R0603" value="100R"/>
+<part name="R6" library="wes" deviceset="R-EU_" device="R0603" value="100R"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD523"/>
 <part name="R4" library="wes" deviceset="R-EU_" device="R0603" value="1M"/>
 </parts>
@@ -5133,12 +5133,12 @@ DigitalWrite(6, LOW);</text>
 <instance part="JP3" gate="G$1" x="162.56" y="58.42" rot="R180"/>
 <instance part="BUT" gate="G$1" x="25.4" y="38.1"/>
 <instance part="R5" gate="G$1" x="40.64" y="40.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="39.5986" y="36.83" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="42.418" y="36.83" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="34.29" y="44.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="39.37" y="44.958" size="1.778" layer="96"/>
 </instance>
 <instance part="R6" gate="G$1" x="40.64" y="38.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="39.5986" y="34.29" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="42.418" y="34.29" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="34.29" y="42.1386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="39.37" y="42.418" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="81.28" y="25.4"/>
 <instance part="R4" gate="G$1" x="68.58" y="12.7" smashed="yes" rot="R90">
