@@ -13169,10 +13169,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="C1" library="wes" deviceset="CPOL-EU" device="C"/>
 <part name="C2" library="wes" deviceset="CPOL-EU" device="C"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C4" library="wes" deviceset="C-EU" device="C0805"/>
+<part name="C4" library="wes" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="U1" library="RHT03_DHT-22_AM2302" deviceset="RHT03_DHT-22_AM2302" device="RA"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="C5" library="wes" deviceset="C-EU" device="C0805"/>
+<part name="C5" library="wes" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R1" library="wes" deviceset="R-EU_" device="R0805" value="10k"/>
@@ -13184,15 +13184,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="DB2S31600"/>
 <part name="C7" library="wes" deviceset="C-EU" device="C0805" value="10uF 10V"/>
-<part name="R3" library="wes" deviceset="R-EU_" device="R0805" value="0R"/>
+<part name="R3" library="wes" deviceset="R-EU_" device="R0805" value="100R"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="NFET"/>
 <part name="R5" library="wes" deviceset="R-EU_" device="R0805" value="100R"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
 <part name="R4" library="wes" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="U$1" library="lib_pluvion" deviceset="DRV5023FAQDBZR" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
-<part name="R6" library="wes" deviceset="R-EU_" device="R0805"/>
-<part name="R7" library="wes" deviceset="R-EU_" device="R0805"/>
+<part name="R6" library="wes" deviceset="R-EU_" device="R0805" value="100R"/>
+<part name="R7" library="wes" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
@@ -13204,8 +13204,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="Q3" library="semicon-smd-ipc" deviceset="NPN-TRANSISTOR_" device="SOT23" value="S8050"/>
 <part name="Q4" library="semicon-smd-ipc" deviceset="NPN-TRANSISTOR_" device="SOT23" value="S8050"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="R8" library="wes" deviceset="R-EU_" device="R0805"/>
-<part name="R9" library="wes" deviceset="R-EU_" device="R0805"/>
+<part name="R8" library="wes" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R9" library="wes" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="MDL2" library="ESP8266-ESP12E" deviceset="ESP8266-12E" device="ESP8266-ESP12E"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -13220,7 +13220,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="J3" library="con-molex" deviceset="22-?-04" device="05-7048"/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="RN2" library="resistor-dil" deviceset="4R-N" device="0603-ARV"/>
+<part name="RN2" library="resistor-dil" deviceset="4R-N" device="0603-ARV" value="1k"/>
 <part name="J4" library="con-molex" deviceset="22-?-04" device="05-7048"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="USB_MICROB_PLUG" device="CONN-11752"/>
@@ -13230,7 +13230,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="LED1" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R18" library="wes" deviceset="R-EU_" device="R0805"/>
+<part name="R18" library="wes" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="JP6" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO"/>
 <part name="RN3" library="resistor-dil" deviceset="4R-N" device="0603-ARV" value="10K"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="FTDI_BASIC" device="PTH"/>
@@ -13239,8 +13239,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="D6" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="DB2S31600"/>
-<part name="R10" library="wes" deviceset="R-EU_" device="R0805"/>
-<part name="R11" library="wes" deviceset="R-EU_" device="R0805"/>
+<part name="R10" library="wes" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R11" library="wes" deviceset="R-EU_" device="R0805" value="1k"/>
 </parts>
 <sheets>
 <sheet>
