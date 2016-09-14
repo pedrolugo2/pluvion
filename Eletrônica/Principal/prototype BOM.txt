@@ -1,0 +1,42 @@
+Partlist exported from /Users/wes/Google Drive/trab/redbull/Residencia Basement/repo/Pluvion/Eletrônica/Principal/Pluvion 1 - Rev A.sch at 9/14/16 01:56
+
+Assembly variant: ''
+
+Qty Value                     Device                    Parts              
+OK 2                             CPOL-EUC                  C1, C2             
+OKISH 4                             DIODESOD                  D1, D2, D3, D4     
+              
+1                             JUMPER-2PTH               JP5                
+                
+1                             LED1206                   LED1               
+                 
+                 
+1   1k                        4R-N0603-ARV              RN6, RN2   http://www.opoeneletronica.com.br/home/produto/codigo:12739/rede-resistiva-1k-0603-1608-smd-4res-superficie-rede-resistiva-5
+1   10k                       4R-N0603-ARV              RN3    http://www.opoeneletronica.com.br/home/produto/codigo:12686/rede-resistiva-10k-0603-1608-smd-4res-superficie-rede-resistiva-5
+
+OK 3   100R                      R-EU_R0805                R3, R5, R6
+OK 2   1M                        R-EU_R0805                R2, R4    
+OK 2   1k                        R-EU_R0805                R10, R11                          
+OK 5   10k                       R-EU_R0805                R1, R7, R8, R9, R18
+
+OK 2   10uF 10V                  C-EUC0805                 C6, C7 
+OK 2   100nF                     C-EUC0805                 C4, C5
+
+
+
+
+
+OK 2   DB2S31600                 DIODESMA                  D5, D6
+
+1   DRV5023FAQDBZR            DRV5023FAQDBZR            U$1 
+
+           
+OK 1   NFET                      MOSFET-NCHANNELBSS123LT1G Q2                 
+OK 1   PFET                      IRLML5203                 Q1                 
+1   REG1117                   REG1117                   IC1  http://www.opoeneletronica.com.br/home/produto/codigo:14194/lm1117-3-3v-sot223-smd-superficie
+
+1   Reset                     10-XX-4.5SMD              SW1 
+
+OK 2   S8050                     NPN-TRANSISTOR_SOT23      Q3, Q4
+
+            
