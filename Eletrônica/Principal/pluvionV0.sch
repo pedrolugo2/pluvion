@@ -6560,6 +6560,140 @@ reflow soldering</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="semicon-smd-ipc">
+<description>&lt;b&gt;IPC Standard SMD Semiconductors&lt;/b&gt;&lt;p&gt;
+A few devices defined according to the IPC standard.&lt;p&gt;
+Based on:&lt;p&gt;
+IPC-SM-782&lt;br&gt;
+IRevision A, August 1993&lt;br&gt;
+Includes Amendment 1, October 1996&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23W">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
+wave soldering</description>
+<wire x1="-1.973" y1="1.983" x2="1.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-1.983" x2="-1.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-1.983" x2="-1.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="1.983" x2="1.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="1.422" y1="0.66" x2="1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.66" x2="-1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.66" x2="-1.422" y2="0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="0.66" x2="1.422" y2="0.66" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.303" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.303" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.303" dx="1" dy="1.4" layer="1"/>
+<text x="-2.03" y="2.0701" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.9949" y="-3.3701" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<rectangle x1="-0.5001" y1="-0.5001" x2="0.5001" y2="0.5001" layer="35"/>
+</package>
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOT89">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="1.219" x2="2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-0.7874" y1="1.5748" x2="-0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<smd name="1" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
+<smd name="3" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
+<smd name="2" x="0" y="-1.727" dx="0.8" dy="1.9" layer="1"/>
+<smd name="2@1" x="0" y="0.94" dx="2.032" dy="3.65" layer="1" roundness="75"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4051" y="-4.3449" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
+<rectangle x1="1.27" y1="-2.1082" x2="1.7272" y2="-1.27" layer="51"/>
+<rectangle x1="-0.2794" y1="-2.1082" x2="0.2794" y2="-1.27" layer="51"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-0.7874" y="1.3208"/>
+<vertex x="-0.7874" y="1.5748"/>
+<vertex x="-0.3556" y="2.0066"/>
+<vertex x="0.3048" y="2.0066"/>
+<vertex x="0.3556" y="2.0066"/>
+<vertex x="0.7874" y="1.5748"/>
+<vertex x="0.7874" y="1.2954"/>
+<vertex x="-0.7874" y="1.2954"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.0399" x2="0.3081" y2="-1.4239" width="0.1524" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NPN-TRANSISTOR_" prefix="Q" uservalue="yes">
+<description>&lt;B&gt;NPN TRANSISTOR&lt;/B&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23W" package="SOT23W">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT89" package="SOT89">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6593,6 +6727,25 @@ reflow soldering</description>
 <part name="GND" library="solpad" deviceset="LSP10" device=""/>
 <part name="IC1" library="v-reg" deviceset="LD117A?*" device="S" technology="33TR"/>
 <part name="HALL1" library="lib_pluvion" deviceset="DRV5023FAQDBZR" device=""/>
+<part name="RX" library="solpad" deviceset="LSP10" device=""/>
+<part name="TX" library="solpad" deviceset="LSP10" device=""/>
+<part name="RTS" library="solpad" deviceset="LSP10" device=""/>
+<part name="DTR" library="solpad" deviceset="LSP10" device=""/>
+<part name="GND_" library="solpad" deviceset="LSP10" device=""/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="M1206" value="470R"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="M1206" value="470R"/>
+<part name="GND5" library="supply1" deviceset="GNDA" device=""/>
+<part name="Q1" library="semicon-smd-ipc" deviceset="NPN-TRANSISTOR_" device="SOT23" value="S8050"/>
+<part name="Q2" library="semicon-smd-ipc" deviceset="NPN-TRANSISTOR_" device="SOT23" value="S8050"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="M1206" value="10K"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="M1206" value="10K"/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="M1206" value="10K"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="M1206" value="10K"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="M1206" value="10K"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="M1206" value="10K"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="M1206" value="10K"/>
+<part name="GND6" library="supply1" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6602,6 +6755,7 @@ reflow soldering</description>
 <text x="50.8" y="116.84" size="1.778" layer="97">Sensor de Chuva</text>
 <text x="73.66" y="50.8" size="1.778" layer="97" rot="R180">Microcontrolador ESP8266</text>
 <text x="-22.86" y="91.44" size="1.778" layer="97">Alimentação</text>
+<text x="38.1" y="-7.62" size="2.1844" layer="91">FDTI</text>
 </plain>
 <instances>
 <instance part="ESP8266" gate="G$1" x="66.04" y="33.02"/>
@@ -6633,6 +6787,25 @@ reflow soldering</description>
 <instance part="GND" gate="1" x="-43.18" y="68.58" rot="R90"/>
 <instance part="IC1" gate="G$1" x="-15.24" y="81.28"/>
 <instance part="HALL1" gate="G$1" x="119.38" y="35.56"/>
+<instance part="RX" gate="1" x="22.86" y="-35.56" rot="R180"/>
+<instance part="TX" gate="1" x="30.48" y="-35.56" rot="R180"/>
+<instance part="RTS" gate="1" x="38.1" y="-35.56" rot="R180"/>
+<instance part="DTR" gate="1" x="45.72" y="-35.56" rot="R180"/>
+<instance part="GND_" gate="1" x="53.34" y="-35.56" rot="R180"/>
+<instance part="R1" gate="G$1" x="22.86" y="-27.94" rot="R90"/>
+<instance part="R3" gate="G$1" x="30.48" y="-27.94" rot="R90"/>
+<instance part="GND5" gate="1" x="66.04" y="-38.1"/>
+<instance part="Q1" gate="G$1" x="22.86" y="-60.96" rot="R180"/>
+<instance part="Q2" gate="G$1" x="22.86" y="-81.28" rot="R180"/>
+<instance part="R4" gate="G$1" x="35.56" y="-60.96"/>
+<instance part="R5" gate="G$1" x="35.56" y="-81.28"/>
+<instance part="+3V4" gate="G$1" x="-43.18" y="33.02"/>
+<instance part="R6" gate="G$1" x="-35.56" y="25.4"/>
+<instance part="R7" gate="G$1" x="-35.56" y="17.78"/>
+<instance part="R8" gate="G$1" x="-35.56" y="10.16"/>
+<instance part="R9" gate="G$1" x="-35.56" y="2.54"/>
+<instance part="R10" gate="G$1" x="-35.56" y="-10.16"/>
+<instance part="GND6" gate="1" x="-48.26" y="-20.32"/>
 </instances>
 <busses>
 </busses>
@@ -6657,6 +6830,29 @@ reflow soldering</description>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
 <wire x1="-7.62" y1="81.28" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="81.28" x2="-5.08" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<pinref part="ESP8266" gate="G$1" pin="VCC"/>
+<wire x1="33.02" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="-40.64" y1="2.54" x2="-43.18" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="2.54" x2="-43.18" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="-43.18" y1="10.16" x2="-43.18" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="17.78" x2="-43.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="25.4" x2="-43.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="10.16" x2="-43.18" y2="10.16" width="0.1524" layer="91"/>
+<junction x="-43.18" y="10.16"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="17.78" x2="-43.18" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-43.18" y="17.78"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="25.4" x2="-43.18" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-43.18" y="25.4"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6702,11 +6898,23 @@ reflow soldering</description>
 <wire x1="66.04" y1="99.06" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="RST" class="0">
 <segment>
 <pinref part="ESP8266" gate="G$1" pin="REST"/>
 <wire x1="33.02" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="1" pin="S"/>
+<label x="38.1" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="20.32" y1="-55.88" x2="20.32" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-50.8" x2="35.56" y2="-50.8" width="0.1524" layer="91"/>
+<label x="35.56" y="-50.8" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="17.78" x2="-25.4" y2="17.78" width="0.1524" layer="91"/>
+<label x="-25.4" y="17.78" size="1.4224" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC/2" class="0">
@@ -6736,11 +6944,6 @@ reflow soldering</description>
 </net>
 <net name="D3" class="0">
 <segment>
-<pinref part="ESP8266" gate="G$1" pin="GPIO0"/>
-<wire x1="73.66" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
-<label x="76.2" y="30.48" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="DATA"/>
 <wire x1="124.46" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
@@ -6752,7 +6955,7 @@ reflow soldering</description>
 <segment>
 <pinref part="ESP8266" gate="G$1" pin="GPIO4"/>
 <wire x1="73.66" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
-<label x="76.2" y="35.56" size="1.27" layer="95" xref="yes"/>
+<label x="76.2" y="35.56" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GNDA" class="0">
@@ -6760,6 +6963,19 @@ reflow soldering</description>
 <pinref part="HALL1" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GNDA"/>
 <wire x1="119.38" y1="25.4" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND_" gate="1" pin="MP"/>
+<wire x1="53.34" y1="-33.02" x2="53.34" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GNDA"/>
+<wire x1="66.04" y1="-30.48" x2="66.04" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GNDA"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="-48.26" y1="-17.78" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-10.16" x2="-40.64" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6772,6 +6988,174 @@ reflow soldering</description>
 <segment>
 <pinref part="HALL1" gate="G$1" pin="VCC"/>
 <wire x1="114.3" y1="25.4" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="RX" gate="1" pin="MP"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="TX" gate="1" pin="MP"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="-22.86" x2="22.86" y2="-20.32" width="0.1524" layer="91"/>
+<label x="22.86" y="-20.32" size="1.016" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="TXD"/>
+<wire x1="73.66" y1="40.64" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
+<label x="76.2" y="40.64" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TX" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="-22.86" x2="30.48" y2="-20.32" width="0.1524" layer="91"/>
+<label x="30.48" y="-20.32" size="1.016" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="RXD"/>
+<wire x1="73.66" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
+<label x="76.2" y="38.1" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="B"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="-60.96" x2="30.48" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="Q2" gate="G$1" pin="B"/>
+<wire x1="30.48" y1="-81.28" x2="25.4" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO0" class="0">
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="GPIO0"/>
+<wire x1="73.66" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<label x="76.2" y="30.48" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="-86.36" x2="20.32" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-93.98" x2="35.56" y2="-93.98" width="0.1524" layer="91"/>
+<label x="35.56" y="-93.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="10.16" x2="-25.4" y2="10.16" width="0.1524" layer="91"/>
+<label x="-25.4" y="10.16" size="1.4224" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RTS" class="0">
+<segment>
+<pinref part="RTS" gate="1" pin="MP"/>
+<wire x1="38.1" y1="-33.02" x2="38.1" y2="-27.94" width="0.1524" layer="91"/>
+<label x="38.1" y="-27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="-81.28" x2="55.88" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="55.88" y1="-81.28" x2="71.12" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-66.04" x2="20.32" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-68.58" x2="55.88" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-68.58" x2="55.88" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="55.88" y="-81.28"/>
+</segment>
+</net>
+<net name="DTR" class="0">
+<segment>
+<pinref part="DTR" gate="1" pin="MP"/>
+<wire x1="45.72" y1="-33.02" x2="45.72" y2="-27.94" width="0.1524" layer="91"/>
+<label x="45.72" y="-27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="-60.96" x2="60.96" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
+<wire x1="60.96" y1="-60.96" x2="71.12" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-76.2" x2="20.32" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-73.66" x2="60.96" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-73.66" x2="60.96" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="60.96" y="-60.96"/>
+</segment>
+</net>
+<net name="CH_PD" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="25.4" x2="-25.4" y2="25.4" width="0.1524" layer="91"/>
+<label x="-25.4" y="25.4" size="1.4224" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="CH_PD"/>
+<wire x1="43.18" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<label x="40.64" y="35.56" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO2" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="2.54" x2="-25.4" y2="2.54" width="0.1524" layer="91"/>
+<label x="-25.4" y="2.54" size="1.4224" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="GPIO2"/>
+<wire x1="73.66" y1="27.94" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+<label x="76.2" y="27.94" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO15" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="-10.16" x2="-25.4" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-25.4" y="-10.16" size="1.4224" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="GPIO15"/>
+<wire x1="73.66" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
+<label x="76.2" y="25.4" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="GPIO5"/>
+<wire x1="73.66" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="GPIO13"/>
+<wire x1="43.18" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="GPIO16"/>
+<wire x1="43.18" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="GPIO12"/>
+<wire x1="43.18" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="ESP8266" gate="G$1" pin="ADC"/>
+<wire x1="43.18" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

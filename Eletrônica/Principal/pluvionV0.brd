@@ -1371,6 +1371,32 @@ reflow soldering</description>
 </package>
 </packages>
 </library>
+<library name="semicon-smd-ipc">
+<description>&lt;b&gt;IPC Standard SMD Semiconductors&lt;/b&gt;&lt;p&gt;
+A few devices defined according to the IPC standard.&lt;p&gt;
+Based on:&lt;p&gt;
+IPC-SM-782&lt;br&gt;
+IRevision A, August 1993&lt;br&gt;
+Includes Amendment 1, October 1996&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1574,6 +1600,22 @@ design rules under a new name.</description>
 <element name="GND" library="solpad" package="LSP10" value="LSP10" x="44.45" y="5.715"/>
 <element name="IC1" library="v-reg" package="SOT223" value="LD117AS33TR" x="-18.415" y="-2.54"/>
 <element name="HALL1" library="lib_pluvion" package="SOT23" value="DRV5023FAQDBZR" x="-19.05" y="-10.795"/>
+<element name="RX" library="solpad" package="LSP10" value="LSP10" x="-19.685" y="-17.78"/>
+<element name="TX" library="solpad" package="LSP10" value="LSP10" x="-19.685" y="-22.225"/>
+<element name="RTS" library="solpad" package="LSP10" value="LSP10" x="-19.685" y="-26.67"/>
+<element name="DTR" library="solpad" package="LSP10" value="LSP10" x="-19.685" y="-31.115"/>
+<element name="GND_" library="solpad" package="LSP10" value="LSP10" x="-19.685" y="-35.56"/>
+<element name="R1" library="rcl" package="M1206" value="470R" x="-19.05" y="-40.005"/>
+<element name="R3" library="rcl" package="M1206" value="470R" x="-19.05" y="-46.355"/>
+<element name="Q1" library="semicon-smd-ipc" package="SOT23" value="S8050" x="-19.05" y="-53.34"/>
+<element name="Q2" library="semicon-smd-ipc" package="SOT23" value="S8050" x="-19.05" y="-59.055"/>
+<element name="R4" library="rcl" package="M1206" value="10K" x="-19.05" y="-66.04"/>
+<element name="R5" library="rcl" package="M1206" value="10K" x="-19.05" y="-72.39"/>
+<element name="R6" library="rcl" package="M1206" value="10K" x="-19.05" y="-78.74"/>
+<element name="R7" library="rcl" package="M1206" value="10K" x="-19.05" y="-85.09"/>
+<element name="R8" library="rcl" package="M1206" value="10K" x="-19.05" y="-91.44"/>
+<element name="R9" library="rcl" package="M1206" value="10K" x="-19.05" y="-97.79"/>
+<element name="R10" library="rcl" package="M1206" value="10K" x="-19.05" y="-104.14"/>
 </elements>
 <signals>
 <signal name="+3V3">
@@ -1610,8 +1652,18 @@ design rules under a new name.</description>
 <wire x1="5.08" y1="5.08" x2="5.715" y2="4.445" width="0.8128" layer="1"/>
 <wire x1="5.715" y1="4.445" x2="9.62" y2="4.445" width="0.8128" layer="1"/>
 <contactref element="IC1" pad="4"/>
-<wire x1="31.75" y1="4.30231875" x2="35.35099375" y2="12.407171875" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.415" y1="0.61" x2="5.08" y2="5.08" width="0" layer="19" extent="1-1"/>
+<contactref element="ESP8266" pad="16"/>
+<contactref element="R9" pad="1"/>
+<contactref element="R8" pad="1"/>
+<contactref element="R7" pad="1"/>
+<contactref element="R6" pad="1"/>
+<wire x1="-20.45" y1="-91.44" x2="-20.45" y2="-97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.45" y1="-85.09" x2="-20.45" y2="-91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.45" y1="-78.74" x2="-20.45" y2="-85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.415" y1="0.61" x2="-20.45" y2="-78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="5.08" x2="-18.415" y2="0.61" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="4.54" x2="9.525" y2="4.54" width="0" layer="19" extent="1-1"/>
+<wire x1="35.35099375" y1="12.407171875" x2="31.75" y2="4.30231875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="ESP8266" pad="1"/>
@@ -1645,13 +1697,17 @@ design rules under a new name.</description>
 <wire x1="8.89" y1="45.72" x2="26.035" y2="33.655" width="0" layer="19" extent="16-16"/>
 <wire x1="-20.715" y1="-5.69" x2="2.8194" y2="22.1488" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$4">
+<signal name="RST">
 <contactref element="ESP8266" pad="9"/>
 <contactref element="SW1" pad="1"/>
 <wire x1="7.3406" y1="22.1488" x2="7.3406" y2="19.3294" width="0.6096" layer="1"/>
 <wire x1="7.3406" y1="19.3294" x2="7.62" y2="19.05" width="0.6096" layer="1"/>
 <wire x1="7.62" y1="19.05" x2="8.38" y2="19.05" width="0.6096" layer="1"/>
 <wire x1="8.38" y1="19.05" x2="8.89" y2="18.54" width="0.6096" layer="1"/>
+<contactref element="Q1" pad="2"/>
+<contactref element="R7" pad="2"/>
+<wire x1="-18.1" y1="-54.44" x2="-17.65" y2="-85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="18.54" x2="-18.1" y2="-54.44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC/2">
 <contactref element="C5" pad="1"/>
@@ -1668,7 +1724,6 @@ design rules under a new name.</description>
 <wire x1="8.89" y1="10.54" x2="17.78" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D3">
-<contactref element="ESP8266" pad="4"/>
 <contactref element="R2" pad="2"/>
 <contactref element="U1" pad="DATA"/>
 <wire x1="26.899565625" y1="14.54" x2="29.380034375" y2="17.02046875" width="0.8128" layer="1"/>
@@ -1678,19 +1733,103 @@ design rules under a new name.</description>
 <via x="27.94" y="22.86" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="27.94" y1="22.86" x2="27.94" y2="18.460503125" width="0.8128" layer="1"/>
 <wire x1="27.94" y1="18.460503125" x2="29.380034375" y2="17.02046875" width="0.8128" layer="1"/>
-<wire x1="25.09" y1="10.54" x2="26.899565625" y2="14.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D2">
 <contactref element="ESP8266" pad="6"/>
 </signal>
 <signal name="GNDA">
 <contactref element="HALL1" pad="3"/>
+<contactref element="GND_" pad="MP"/>
+<contactref element="R10" pad="1"/>
+<wire x1="-19.685" y1="-35.56" x2="-20.45" y2="-104.14" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.05" y1="-9.695" x2="-19.685" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="HALL1" pad="2"/>
 </signal>
 <signal name="N$2">
 <contactref element="HALL1" pad="1"/>
+</signal>
+<signal name="N$3">
+<contactref element="RX" pad="MP"/>
+<contactref element="R1" pad="1"/>
+<wire x1="-19.685" y1="-17.78" x2="-20.45" y2="-40.005" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="TX" pad="MP"/>
+<contactref element="R3" pad="1"/>
+<wire x1="-19.685" y1="-22.225" x2="-20.45" y2="-46.355" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RX">
+<contactref element="R1" pad="2"/>
+<contactref element="ESP8266" pad="8"/>
+<wire x1="25.09" y1="18.54" x2="-17.65" y2="-40.005" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="TX">
+<contactref element="R3" pad="2"/>
+<contactref element="ESP8266" pad="7"/>
+<wire x1="25.09" y1="16.54" x2="-17.65" y2="-46.355" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="Q1" pad="1"/>
+<contactref element="R4" pad="1"/>
+<wire x1="-20" y1="-54.44" x2="-20.45" y2="-66.04" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="R5" pad="1"/>
+<contactref element="Q2" pad="1"/>
+<wire x1="-20" y1="-60.155" x2="-20.45" y2="-72.39" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GPIO0">
+<contactref element="ESP8266" pad="4"/>
+<contactref element="Q2" pad="3"/>
+<contactref element="R8" pad="2"/>
+<wire x1="-19.05" y1="-57.955" x2="-17.65" y2="-91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="25.09" y1="10.54" x2="-19.05" y2="-57.955" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTS">
+<contactref element="RTS" pad="MP"/>
+<contactref element="R5" pad="2"/>
+<contactref element="Q1" pad="3"/>
+<wire x1="-19.05" y1="-52.24" x2="-17.65" y2="-72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.685" y1="-26.67" x2="-19.05" y2="-52.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DTR">
+<contactref element="DTR" pad="MP"/>
+<contactref element="R4" pad="2"/>
+<contactref element="Q2" pad="2"/>
+<wire x1="-18.1" y1="-60.155" x2="-17.65" y2="-66.04" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.685" y1="-31.115" x2="-18.1" y2="-60.155" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CH_PD">
+<contactref element="R6" pad="2"/>
+<contactref element="ESP8266" pad="11"/>
+<wire x1="8.89" y1="14.54" x2="-17.65" y2="-78.74" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GPIO2">
+<contactref element="R9" pad="2"/>
+<contactref element="ESP8266" pad="3"/>
+<wire x1="25.09" y1="8.54" x2="-17.65" y2="-97.79" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GPIO15">
+<contactref element="R10" pad="2"/>
+<contactref element="ESP8266" pad="2"/>
+<wire x1="25.09" y1="6.54" x2="-17.65" y2="-104.14" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="ESP8266" pad="5"/>
+</signal>
+<signal name="N$10">
+<contactref element="ESP8266" pad="15"/>
+</signal>
+<signal name="N$11">
+<contactref element="ESP8266" pad="12"/>
+</signal>
+<signal name="N$12">
+<contactref element="ESP8266" pad="14"/>
+</signal>
+<signal name="N$14">
+<contactref element="ESP8266" pad="10"/>
 </signal>
 </signals>
 </board>
