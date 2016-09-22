@@ -4266,6 +4266,146 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="RHT03_DHT-22_AM2302">
+<description>&lt;h1&gt;RHT03 / DHT-22 / AM2302 library&lt;/h1&gt;
+&lt;p&gt;
+Library with devices (schematic symbol and packages) for the RHT03 / DHT-22 / AM2302 digital relative humidity and tempearture sensor.&lt;br /&gt;
+Warning: Package does not include tKeepout areas so that the part may optionally be placed on a riser with components underneath.  Please keep the package outline and bent-pin space in mind.
+&lt;/p&gt;</description>
+<packages>
+<package name="RHT03_DHT-22">
+<description>&lt;h1&gt;RHT03 / DHT-22&lt;/h1&gt;
+&lt;p&gt;
+Package for the RHT03 / DHT-22 relative humidity and temperature sensor.
+&lt;/p&gt;</description>
+<pad name="VDD" x="-3.81" y="0" drill="0.8" shape="octagon"/>
+<pad name="DATA" x="-1.27" y="0" drill="0.8"/>
+<pad name="NULL" x="1.27" y="0" drill="0.8"/>
+<pad name="GND" x="3.81" y="0" drill="0.8"/>
+<wire x1="-7.55" y1="2.5" x2="7.55" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-7.55" y1="-5.2" x2="7.55" y2="-5.2" width="0.127" layer="21"/>
+<wire x1="-7.55" y1="2.5" x2="-7.55" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-7.55" y1="0.8" x2="-7.55" y2="-5.2" width="0.127" layer="21"/>
+<wire x1="7.55" y1="2.5" x2="7.55" y2="0.8" width="0.127" layer="21"/>
+<wire x1="7.55" y1="0.8" x2="7.55" y2="-5.2" width="0.127" layer="21"/>
+<wire x1="-7.55" y1="0.8" x2="7.55" y2="0.8" width="0.127" layer="21"/>
+<text x="-6" y="-4.5" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<text x="-6" y="-2.5" size="1.27" layer="21" font="vector">&gt;VALUE</text>
+</package>
+<package name="AM2302">
+<description>&lt;h1&gt;AM2302&lt;/h1&gt;
+&lt;p&gt;
+Package for the AM2302 wired variant of the RHT03/DHT-22 relative humidity and temperature sensor.
+&lt;/p&gt;</description>
+<pad name="VDD" x="-3.81" y="0" drill="0.8" shape="octagon"/>
+<pad name="DATA" x="-1.27" y="0" drill="0.8"/>
+<pad name="NULL" x="1.27" y="0" drill="0.8"/>
+<pad name="GND" x="3.81" y="0" drill="0.8"/>
+<text x="-5.08" y="-2.667" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-0.635" width="0.127" layer="21"/>
+<text x="-5.08" y="1.397" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+<package name="RHT03_DHT-22/RA">
+<description>&lt;h1&gt;RHT03 / DHT-22 - RIGHT ANGLE&lt;/h1&gt;
+&lt;p&gt;
+Right angle package for the RHT03 / DHT-22 relative humidity and temperature sensor.
+&lt;/p&gt;</description>
+<pad name="VDD" x="-3.81" y="0" drill="0.8" shape="octagon"/>
+<pad name="DATA" x="-1.27" y="0" drill="0.8"/>
+<pad name="NULL" x="1.27" y="0" drill="0.8"/>
+<pad name="GND" x="3.81" y="0" drill="0.8"/>
+<wire x1="-7.55" y1="2.5" x2="7.55" y2="2.5" width="0.127" layer="21"/>
+<text x="-5.08" y="5.08" size="1.27" layer="21" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="-7.55" y1="2.5" x2="-7.55" y2="22.5" width="0.127" layer="21"/>
+<wire x1="7.55" y1="2.5" x2="7.55" y2="22.5" width="0.127" layer="21"/>
+<wire x1="-7.55" y1="22.5" x2="7.55" y2="22.5" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="27.1" x2="5.25" y2="27.1" width="0.127" layer="21"/>
+<wire x1="7.55" y1="22.5" x2="5.25" y2="27.1" width="0.127" layer="21"/>
+<wire x1="-7.55" y1="22.5" x2="-5.25" y2="27.1" width="0.127" layer="21"/>
+<hole x="0" y="24.5" drill="3.25"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="2.54" width="0.127" layer="21"/>
+<text x="0" y="12.5" size="1.27" layer="21" font="vector" rot="R90" align="center">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="RHT03">
+<description>&lt;h1&gt;RHT03 / DHT-22 / AM2302&lt;/h1&gt;
+&lt;p&gt;
+Symbol for the RHT03 / DHT-22 / AM2302 relative humidity and temperature sensor.
+&lt;/p&gt;</description>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="VDD" x="-10.16" y="7.62" length="middle" direction="pwr"/>
+<pin name="DATA" x="-10.16" y="2.54" length="middle"/>
+<pin name="NULL" x="-10.16" y="-2.54" visible="pad" length="middle" direction="nc"/>
+<pin name="GND" x="-10.16" y="-7.62" length="middle" direction="pwr"/>
+<text x="-5.08" y="11.43" size="1.27" layer="94">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RHT03_DHT-22_AM2302" prefix="U" uservalue="yes">
+<description>&lt;h1&gt;RHT03 / DHT-22 / AM2302&lt;/h1&gt;
+&lt;p&gt;
+Packages and symbol for the RHT03 / DHT-22 relative humidity and temperature sensor.&lt;br /&gt;
+Note: The AM2302 is a wired version of the DHT-22 which typically requires less clearance and is thus provided as a separate package.
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RHT03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RHT03_DHT-22">
+<connects>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="NULL" pad="NULL"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SEN-10167"/>
+</technology>
+</technologies>
+</device>
+<device name="WIRED" package="AM2302">
+<connects>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="NULL" pad="NULL"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SEN-10167"/>
+</technology>
+</technologies>
+</device>
+<device name="RA" package="RHT03_DHT-22/RA">
+<connects>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="NULL" pad="NULL"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SEN-10167"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4300,6 +4440,10 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="U1" library="RHT03_DHT-22_AM2302" deviceset="RHT03_DHT-22_AM2302" device="RA"/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="R6" library="wes" deviceset="R-EU_" device="R0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -4366,6 +4510,13 @@ DigitalWrite(6, LOW);</text>
 <instance part="GND2" gate="1" x="45.72" y="160.02" rot="R270"/>
 <instance part="GND4" gate="1" x="101.6" y="147.32" rot="R90"/>
 <instance part="GND5" gate="1" x="101.6" y="129.54" rot="R90"/>
+<instance part="U1" gate="G$1" x="198.12" y="149.86"/>
+<instance part="GND6" gate="1" x="182.88" y="134.62"/>
+<instance part="+3V2" gate="G$1" x="182.88" y="165.1"/>
+<instance part="R6" gate="G$1" x="170.18" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="158.75" y="156.4386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="158.75" y="154.178" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4460,6 +4611,12 @@ DigitalWrite(6, LOW);</text>
 <wire x1="88.9" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="187.96" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="142.24" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -4526,6 +4683,16 @@ DigitalWrite(6, LOW);</text>
 <wire x1="68.58" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="78.74" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<wire x1="187.96" y1="157.48" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="157.48" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="160.02" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="160.02" x2="175.26" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="157.48" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4682,6 +4849,16 @@ DigitalWrite(6, LOW);</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VIN"/>
 <wire x1="55.88" y1="127" x2="48.26" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="DATA"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="149.86" x2="175.26" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="149.86" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="152.4" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="149.86" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
