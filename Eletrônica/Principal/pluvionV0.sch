@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6795,7 +6795,7 @@ wave soldering</description>
 <instance part="R1" gate="G$1" x="22.86" y="-27.94" rot="R90"/>
 <instance part="R3" gate="G$1" x="30.48" y="-27.94" rot="R90"/>
 <instance part="GND5" gate="1" x="66.04" y="-38.1"/>
-<instance part="Q1" gate="G$1" x="22.86" y="-60.96" rot="R180"/>
+<instance part="Q1" gate="G$1" x="22.86" y="-60.96" rot="MR0"/>
 <instance part="Q2" gate="G$1" x="22.86" y="-81.28" rot="R180"/>
 <instance part="R4" gate="G$1" x="35.56" y="-60.96"/>
 <instance part="R5" gate="G$1" x="35.56" y="-81.28"/>
@@ -6906,10 +6906,10 @@ wave soldering</description>
 <label x="38.1" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="G$1" pin="E"/>
-<wire x1="20.32" y1="-55.88" x2="20.32" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="-50.8" x2="35.56" y2="-50.8" width="0.1524" layer="91"/>
 <label x="35.56" y="-50.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="-55.88" x2="20.32" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -7026,13 +7026,6 @@ wave soldering</description>
 <label x="76.2" y="38.1" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="B"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="-60.96" x2="30.48" y2="-60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -7067,12 +7060,12 @@ wave soldering</description>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="-81.28" x2="55.88" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="C"/>
 <wire x1="55.88" y1="-81.28" x2="71.12" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="-66.04" x2="20.32" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="-68.58" x2="55.88" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-68.58" x2="55.88" y2="-81.28" width="0.1524" layer="91"/>
 <junction x="55.88" y="-81.28"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="20.32" y1="-66.04" x2="20.32" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -7156,6 +7149,13 @@ wave soldering</description>
 <segment>
 <pinref part="ESP8266" gate="G$1" pin="ADC"/>
 <wire x1="43.18" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="G$1" pin="B"/>
+<wire x1="30.48" y1="-60.96" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
