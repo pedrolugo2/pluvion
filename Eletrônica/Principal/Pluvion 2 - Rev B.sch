@@ -4602,7 +4602,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="U1" library="RHT03_DHT-22_AM2302" deviceset="RHT03_DHT-22_AM2302" device="RA"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
-<part name="R6" library="wes" deviceset="R-EU_" device="R0805"/>
+<part name="R6" library="wes" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="C1" library="wes" deviceset="C-EU" device="C0805" value="10uF 10V"/>
@@ -4611,6 +4611,8 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="J1" library="con-molex" deviceset="22-?-02" device="05-7028"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="R7" library="wes" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-2" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -4695,6 +4697,11 @@ DigitalWrite(6, LOW);</text>
 <attribute name="VALUE" x="20.32" y="71.12" size="1.778" layer="96"/>
 </instance>
 <instance part="GND8" gate="1" x="17.78" y="55.88"/>
+<instance part="R7" gate="G$1" x="30.48" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.29" y="54.8386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="34.29" y="57.658" size="1.778" layer="96"/>
+</instance>
+<instance part="JP1" gate="A" x="-12.7" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -4747,9 +4754,20 @@ DigitalWrite(6, LOW);</text>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="20.32" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="43.18" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VIN"/>
+<wire x1="22.86" y1="43.18" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<junction x="22.86" y="43.18"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<junction x="20.32" y="43.18"/>
+<wire x1="20.32" y1="48.26" x2="-7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="48.26" x2="-7.62" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="-7.62" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="-2" pin="S"/>
@@ -4852,6 +4870,8 @@ DigitalWrite(6, LOW);</text>
 <wire x1="30.48" y1="17.78" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
 <junction x="30.48" y="40.64"/>
 <label x="35.56" y="17.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="40.64" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="D8"/>
@@ -5053,10 +5073,16 @@ DigitalWrite(6, LOW);</text>
 <wire x1="88.9" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="+3VLEFT" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="3V"/>
 <wire x1="55.88" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<label x="38.1" y="137.16" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="-12.7" y1="45.72" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
+<label x="-22.86" y="45.72" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>

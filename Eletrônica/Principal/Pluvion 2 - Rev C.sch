@@ -4726,9 +4726,9 @@ DigitalWrite(6, LOW);</text>
 <junction x="86.36" y="30.48"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="D7"/>
-<wire x1="88.9" y1="139.7" x2="99.06" y2="139.7" width="0.1524" layer="91"/>
-<label x="99.06" y="139.7" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="D6"/>
+<wire x1="88.9" y1="142.24" x2="99.06" y2="142.24" width="0.1524" layer="91"/>
+<label x="99.06" y="142.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -4854,9 +4854,9 @@ DigitalWrite(6, LOW);</text>
 <label x="35.56" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="D8"/>
-<wire x1="88.9" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
-<label x="99.06" y="137.16" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="D7"/>
+<wire x1="88.9" y1="139.7" x2="99.06" y2="139.7" width="0.1524" layer="91"/>
+<label x="99.06" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4920,12 +4920,6 @@ DigitalWrite(6, LOW);</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="D4"/>
 <wire x1="88.9" y1="152.4" x2="99.06" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="D5"/>
-<wire x1="88.9" y1="144.78" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -5036,9 +5030,9 @@ DigitalWrite(6, LOW);</text>
 <label x="165.1" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="D6"/>
-<wire x1="88.9" y1="142.24" x2="99.06" y2="142.24" width="0.1524" layer="91"/>
-<label x="99.06" y="142.24" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="D5"/>
+<wire x1="88.9" y1="144.78" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
+<label x="99.06" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -5057,6 +5051,12 @@ DigitalWrite(6, LOW);</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="3V"/>
 <wire x1="55.88" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="D8"/>
+<wire x1="88.9" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -1,0 +1,17 @@
+Partlist exported from C:/Users/Pedro/Desktop/05. Krafty/XX. Projetos/Pluvi.On/residencia/Eletrônica/Principal/Pluvion 2.sch at 26/09/2016 10:45
+
+Qty Value              Device                    Package            Parts      Description                   MF MPN OC_FARNELL OC_NEWARK PROD_ID    
+2                      DIODESOD                  SOD-323            D1, D4     Diode                                                     DIO-09646  
+1                      JUMPER-2PTH               1X02               JP5        Jumper                                                               
+1                      R-EU_R0805                R0805              R6         RESISTOR, European symbol                                            
+1                      RHT03_DHT-22_AM2302RA     RHT03_DHT-22/RA    U1         RHT03 / DHT-22 / AM2302                                   SEN-10167  
+2   100R               R-EU_R0805                R0805              R3, R5     RESISTOR, European symbol                                            
+1   10k                R-EU_R0805                R0805              R1         RESISTOR, European symbol                                            
+3   10uF 10V           C-EUC0805                 C0805              C1, C6, C7 CAPACITOR, European symbol                                           
+2   1M                 R-EU_R0805                R0805              R2, R4     RESISTOR, European symbol                                            
+1   22-05-7028-02      22-05-7028-02             7395-02            J1         CONNECTOR                            9731601    unknown              
+1   DB2S31600          DIODESMA                  SMA-DIODE          D5         Diode                                                                
+1   DRV5023FAQDBZR     DRV5023FAQDBZR            SOT23              U$1        Digital Switch Hall Sensor                                           
+1   NFET               MOSFET-NCHANNELBSS123LT1G SOT23              Q2         Common NMOSFET Parts                                      TRANS-08345
+1   NODE-LOLIN-ESP8266 NODE-LOLIN-ESP8266        NODE-LOLIN-ESP8266 U$2                                                                             
+1   PFET               IRLML5203                 MICRO3             Q1         HEXFET P-Channel Power MOSFET                                        
